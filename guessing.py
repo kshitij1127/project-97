@@ -15,9 +15,15 @@ while guess != number and chances > 0:
         guess = int(input("guess again: "))
         chances -= 1
 
-print("you guessed it!")
+# while chances > 0:
+#     if guess == number - 1:
+#         print("you are close")
+#     elif guess == number + 1:
+#         print("you are close")
 
 if chances == 0:
     print("game over")
     print("the number was", number)
 
+if guess == number:
+    print("you guessed it!")
